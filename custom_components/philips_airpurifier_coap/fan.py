@@ -302,6 +302,7 @@ class PhilipsGenericCoAPFanBase(PhilipsGenericFan):
         self._client = await CoAPClient.create(self._host)
         self._observer_task = None
         try:
+            await self._client.set_control_value(PHILIPS_DISPLAY_BACKLIGHT, "1")
             status = await self._client.get_status()
             device_id = status[PHILIPS_DEVICE_ID]
             self._unique_id = f"{self._model}-{device_id}"
