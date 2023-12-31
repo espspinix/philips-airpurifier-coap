@@ -2,10 +2,10 @@
   "domain": "philips_airpurifier_coap",
   "name": "Philips AirPurifier (with CoAP)",
   "version": "0.7.2",
-  "documentation": "https://github.com/rkuralev/philips-airpurifier-coap",
+  "documentation": "https://github.com/espspinix/philips-airpurifier-coap",
   "dependencies": [],
-  "codeowners": ["@rkuralev"],
+  "codeowners": ["@espspinix"],
   "requirements": [
-    "aioairctrl @ git+https://github.com/rkuralev/aioairctrl@v0.2.2"
+    "aioairctrl @ git+https://github.com/asztalosdani/aioairctrl@v0.2.2"
   ]
 }
